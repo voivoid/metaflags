@@ -54,6 +54,7 @@ static_assert( !mf::check<mf::one_of_<Read, Write, Cached>, Read, Write>() );
 static_assert( !mf::check<mf::one_of_<Read, Write, Cached>, Read, Write, Cached>() );
 static_assert( !mf::check<mf::one_of_<Read, Write, Cached>, NonCached>() );
 static_assert( !mf::check<mf::one_of_<Read, Write, Cached>, Read, NonCached>() );
+
 }  // namespace
 
 int main()
